@@ -27,7 +27,7 @@ class Register extends React.Component {
 	    return; // Return early if any required field is empty
 	  }
 
-	  fetch('http://localhost:3000/register', {
+	  fetch('https://smart-brain-vss4.onrender.com/register', {
 	    method: 'post',
 	    headers: { 'Content-Type': 'application/json' },
 	    body: JSON.stringify({
