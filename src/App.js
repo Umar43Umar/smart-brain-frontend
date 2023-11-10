@@ -105,7 +105,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
       .catch(err => console.log(err))
-    fetch('https://smart-brain-vss4.onrender.com/image', {
+    fetch('/image', {
       method: 'put',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
