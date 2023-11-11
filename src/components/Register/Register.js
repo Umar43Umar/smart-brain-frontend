@@ -27,7 +27,7 @@ class Register extends React.Component {
 	    return; // Return early if any required field is empty
 	  }
 
-	  fetch('/register', {
+	  fetch('https://myserver-s5pd.onrender.com/register', {
 	    method: 'post',
 	    headers: { 'Content-Type': 'application/json' },
 	    body: JSON.stringify({

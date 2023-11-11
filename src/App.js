@@ -105,7 +105,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
       .catch(err => console.log(err))
-    fetch('/image', {
+    fetch('https://myserver-s5pd.onrender.com/image', {
       method: 'put',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
